@@ -22,7 +22,7 @@ module PaperHouse
     # Include directories for compiling C extensions.
     RUBY_INCLUDES =
       [
-        File.join(CONFIG['rubyhdrdir'], CONFIG['arch']),
+        CONFIG['rubyarchhdrdir'] || File.join(CONFIG['rubyhdrdir'], CONFIG['arch']),
         File.join(CONFIG['rubyhdrdir'], 'ruby/backward'),
         CONFIG['rubyhdrdir']
       ].freeze
