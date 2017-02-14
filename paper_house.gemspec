@@ -32,7 +32,7 @@ Gem::Specification.new do |gem|
   gem.required_ruby_version = '>= 1.9.3'
 
   gem.add_dependency 'POpen4', '~> 0.1.4'
-  gem.add_dependency 'rake'
+  gem.add_dependency 'rake', '~> 11.1.0'
 
   # guard
   gem.add_development_dependency 'guard', '~> 2.6.1'
